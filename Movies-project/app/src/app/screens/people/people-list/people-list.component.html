@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Popular People</h1>
+    <div class="form-group">
+        <input class="form-control" placeholder="search here..." [(ngModel)]="searchText">
+    </div>
+    <div class="people-list">
+        <app-people-list-item *ngFor="let person of people | searchTextFilter: searchText" [person]="person">
+        </app-people-list-item>
+    </div>
+</div>

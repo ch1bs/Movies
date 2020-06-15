@@ -1,0 +1,30 @@
+.fa {
+  color: red;
+}
+
+.fa:hover {
+  color: green;
+}
+
+.btn-sm {
+  position: relative;
+  top: 10px;
+  right: 2px;
+}
+
+.card {
+  .dropdown-media {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    .btn-sm {
+      height: 55px;
+      border-radius: 50%;
+      background: transparent;
+    }
+  }
+}
+
+[ngbDropdownItem] {
+  width: 100%;
+}

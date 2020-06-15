@@ -1,0 +1,11 @@
+<div class="header"
+     *ngIf="movie"
+     [style.background-image]="'url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/'+movie.backdrop_path+')'">
+    <div class="container d-flex custom-background">
+      <img src="https://image.tmdb.org/t/p/w220_and_h330_face/{{movie.poster_path}}"
+           alt="{{movie.title}}" appImgFallback>
+      <div class="d-flex flex-column movie-details">
+        <h1>{{movie.title}} ({{movie.release_date | date: 'y'}})</h1>
+      </div>
+    </div>
+</div>

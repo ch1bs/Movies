@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mentormate-movie-database": {
+      "hosting": {
+        "app": [
+          "mentormate-movie-database"
+        ]
+      }
+    }
+  }
+}

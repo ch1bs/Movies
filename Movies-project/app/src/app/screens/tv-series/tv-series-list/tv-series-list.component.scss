@@ -1,0 +1,11 @@
+app-tv-series-list-item {
+    display: flex;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 0 0 20px;
+}
+
+.tv-series-list {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,43 @@
+<div class="card" style="cursor: pointer;" (click)="redirect()">
+  <img class="card-img-top" style="height: 330px;"
+       src="https://image.tmdb.org/t/p/w220_and_h330_face/{{movie.poster_path}}"
+       alt="{{movie.title}}" appImgFallback>
+
+  <div class="row dropdown-media">
+    <div class="col">
+      <div class="d-inline-block"
+           ngbDropdown
+      >
+        <button class="btn btn-sm btn-warning">
+          <i class="fa fa-ellipsis-h fa-2x"
+             id="dropdownBasic1" ngbDropdownToggle
+             (click)="$event.stopPropagation();"
+          >
+          </i>
+        </button>
+        <div aria-labelledby="dropdownBasic1"
+             ngbDropdownMenu
+        >
+          <button ngbDropdownItem>
+            <i class="fa fa-tv"
+               (click)="addToWatchList(); $event.stopPropagation();"
+            >Add to Watchlist
+            </i>
+          </button>
+          <button ngbDropdownItem>
+            <i class="fa fa-heart"
+               (click)="addToFavories();$event.stopPropagation();"
+            >Add to Favorites
+            </i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body d-flex flex-column justify-content-between" style=" font-size: 16px;">
+    <div class="card-title font-weight-bold">{{movie.title}}</div>
+    <p class="card-text">{{movie.release_date}}</p>
+  </div>
+</div>
+
